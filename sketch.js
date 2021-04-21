@@ -38,6 +38,10 @@ function draw() {
     background(rgb(169,169,169));
     edges=createEdgeSprites();
     ball.bounceOff(edges);
+    ball.bounceOff(block1);
+    ball.bounceOff(block2);
+    ball.bounceOff(block3);
+    ball.bounceOff(block4);
 
     
     //write code to bounce off ball from the block1 
