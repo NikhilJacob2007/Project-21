@@ -39,7 +39,7 @@ function draw() {
     edges=createEdgeSprites();
     ball.bounceOff(edges);
 
-    
+
     //write code to bounce off ball from the block1 
     if(block1.isTouching(ball)){
         ball.shapeColor = "blue";
