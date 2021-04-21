@@ -38,16 +38,13 @@ function draw() {
     background(rgb(169,169,169));
     edges=createEdgeSprites();
     ball.bounceOff(edges);
-    ball.bounceOff(block1);
-    ball.bounceOff(block2);
-    ball.bounceOff(block3);
-    ball.bounceOff(block4);
 
     
     //write code to bounce off ball from the block1 
     if(block1.isTouching(ball)){
         ball.shapeColor = "blue";
         music.play();
+        ball.bounceOff(block1);
     }
 
 
@@ -58,6 +55,7 @@ function draw() {
         ball.setVelocity(0,0);
         //write code to stop music
         music.stop();
+        ball.bounceOff(block2);
     }
 
     //write code to bounce off ball from the block3
@@ -65,6 +63,7 @@ function draw() {
     {
 
         ball.shapeColor = "yellow";
+        ball.bounceOff(block3);
 
     }
 
@@ -73,6 +72,7 @@ function draw() {
     {
 
         ball.shapeColor = "red";
+        ball.bounceOff(block4);
 
     }
     drawSprites();
