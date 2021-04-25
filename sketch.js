@@ -41,7 +41,7 @@ function draw() {
 
 
     //write code to bounce off ball from the block1 
-    if(block1.isTouching(ball)){
+    if(block1.isTouching(ball) && ball.bounceOff(block1){
         ball.shapeColor = "blue";
         music.play();
     }
@@ -57,23 +57,19 @@ function draw() {
     }
 
     //write code to bounce off ball from the block3
-    if(block3.isTouching(ball))
+    if(block3.isTouching(ball) && ball.bounceOff(block3))
     {
 
         ball.shapeColor = "yellow";
     }
 
     //write code to bounce off ball from the block4
-    if(block4.isTouching(ball))
+    if(block4.isTouching(ball) && ball.bounceOff(block4))
     {
 
         ball.shapeColor = "red";
 
     }
-    
-    ball.bounceOff(block1);
-    ball.bounceOff(block3);
-    ball.bounceOff(block4);
     
     drawSprites();
 }
