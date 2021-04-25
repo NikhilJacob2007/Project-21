@@ -70,5 +70,10 @@ function draw() {
         ball.shapeColor = "red";
 
     }
+    
+    ball.bounceOff(block1);
+    ball.bounceOff(block3);
+    ball.bounceOff(block4);
+    
     drawSprites();
 }
