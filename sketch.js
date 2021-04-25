@@ -44,6 +44,7 @@ function draw() {
     if(block1.isTouching(ball)){
         ball.shapeColor = "blue";
         music.play();
+        ball.bounceOff(block1);
     }
 
 
@@ -61,6 +62,7 @@ function draw() {
     {
 
         ball.shapeColor = "yellow";
+        ball.bounceOff(block3);
 
     }
 
@@ -69,6 +71,7 @@ function draw() {
     {
 
         ball.shapeColor = "red";
+        ball.bounceOff(block4);
 
     }
     drawSprites();
